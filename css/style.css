@@ -177,7 +177,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 70px;
+  width: 95px;
 }
 
 .custom_nav-container {
@@ -644,6 +644,10 @@ a:focus {
   width: 100%;
 }
 
+.brand_section {
+  margin-top: 50px;
+}
+
 .brand_section .brand_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,9 +662,9 @@ a:focus {
 
 .brand_section .brand_container .box {
   position: relative;
-  text-align: center;
-  background-color: #e4e5e9;
-  padding: 75px 35px 10px 35px;
+  text-align: left;
+  
+  padding: 0px 0px 10px 0px;
   margin: 30px 10px 0 10px;
   min-width: 225px;
   -webkit-box-flex: 0;
@@ -668,9 +672,21 @@ a:focus {
           flex: 0 0 23.24670%;
 }
 
+.brand_section .brand_container .box .box-warna {
+  position: relative;
+  background-color: #e4e5e9;
+  padding: 75px 35px 45px 35px;
+  top: 0;
+}
+
 .brand_section .brand_container .box h6 {
+  color: #707070;
+}
+
+.brand_section .brand_container .box h5.judul {
   color: #252525;
 }
+
 
 .brand_section .brand_container .box h6.price {
   color: #24d278;
@@ -693,13 +709,21 @@ a:focus {
   width: 100%;
 }
 
+/*
 .brand_section .brand_container .box:hover {
   background-color: #24d278;
 }
+*/
 
+.brand_section .brand_container .box .box-warna:hover {
+  background-color: #24d278;
+}
+
+/*
 .brand_section .brand_container .box:hover h6.price {
   color: #252525;
 }
+*/
 
 .brand_section .brand-btn {
   display: inline-block;
