@@ -347,7 +347,7 @@ a:focus {
 }
 
 .slider_section .img-container .img-box {
-  width: 250px;
+  width: 350px;
 }
 
 .slider_section .img-container .img-box img {
@@ -451,7 +451,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: -150px;
+  bottom: -100px;
 }
 
 .slider_section .carousel-indicators li {
