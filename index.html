@@ -33,8 +33,8 @@
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
+      <div class="container-fluid" id="navbar">
+        <nav class="navbar navbar-expand-lg custom_nav-container" >
           <a class="navbar-brand" href="index.html">
             <img src="images/logo1.png" alt="" />
           </a>
@@ -481,7 +481,7 @@
   <!-- end discount section -->
 
   <!-- brand section -->
-  <!-- mabel section -->
+    <!-- mabel section -->
   
   <section class="brand_section" id="furniture">
     <div class="container">
@@ -587,7 +587,7 @@
     </div>
   </section>
 
-<!-- alat elektronik section -->
+  <!-- alat elektronik section -->
   
 <section class="brand_section">
   <div class="container">
@@ -693,7 +693,7 @@
   </div>
 </section>
 
-<!-- alat peraga edukatif section -->
+  <!-- alat peraga edukatif section -->
   
 <section class="brand_section">
   <div class="container">
@@ -799,7 +799,7 @@
   </div>
 </section>
 
-<!-- alat tulis kantor section -->
+  <!-- alat tulis kantor section -->
   
 <section class="brand_section">
   <div class="container">
@@ -906,9 +906,10 @@
 </section>
 
   <!-- end brand section -->
+
   <!-- contact section -->
 
-  <section class="contact_section layout_padding">
+  <section class="contact_section layout_padding" id="contact">
     <div class="container ">
       <div class="heading_container">
         <h2 class="">
@@ -1217,7 +1218,22 @@
     })
   </script>
 
-</body>
+  <!-- sticky navbar -->
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 
 </html>
