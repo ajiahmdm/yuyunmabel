@@ -55,7 +55,7 @@
                 <a class="nav-link" href="shop.html">Shop </a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#furniture" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()"> Sale </a>
+                <a class="nav-link" href="#sale" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()"> Sale </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()">Contact us</a>
@@ -483,14 +483,17 @@
   <!-- brand section -->
     <!-- mabel section -->
   
-  <section class="brand_section" id="furniture">
+  <section class="brand_section" id="sale">
     <div class="container">
-      <div class="heading_container">
+      <details>
+        <summary>
+      <div class="heading_container" >
         <h2>
           Mebel
         </h2>
       </div>
-      <div class="brand_container layout_padding2">
+        </summary>
+      <div class="brand_container layout_padding2" >
         <div class="box">
           <div class="box-warna">
           <a href="">
@@ -580,10 +583,12 @@
             </div>
           </a>
         </div>
+        <a href="" class="brand-btn">
+          Lihat Lebih
+        </a>
       </div>
-      <a href="" class="brand-btn">
-        Lihat Lebih
-      </a>
+    </details>
+
     </div>
   </section>
 
@@ -591,12 +596,15 @@
   
 <section class="brand_section">
   <div class="container">
-    <div class="heading_container">
+    <details>
+      <summary>
+    <div class="heading_container" >
       <h2>
         Alat Elektronik
       </h2>
     </div>
-    <div class="brand_container layout_padding2">
+      </summary>
+    <div class="brand_container layout_padding2" >
       <div class="box">
         <div class="box-warna">
         <a href="">
@@ -686,10 +694,12 @@
           </div>
         </a>
       </div>
+      <a href="" class="brand-btn">
+        Lebih Banyak
+      </a>
     </div>
-    <a href="" class="brand-btn">
-      Lebih Lanjut
-    </a>
+    
+    </details>
   </div>
 </section>
 
@@ -697,12 +707,15 @@
   
 <section class="brand_section">
   <div class="container">
-    <div class="heading_container">
+    <details>
+      <summary>
+    <div class="heading_container" >
       <h2>
         Alat Peraga Edukatif
       </h2>
     </div>
-    <div class="brand_container layout_padding2">
+  </summary>
+    <div class="brand_container layout_padding2" >
       <div class="box">
         <div class="box-warna">
         <a href="">
@@ -792,10 +805,12 @@
           </div>
         </a>
       </div>
+      <a href="" class="brand-btn">
+        Lebih Banyak
+      </a>
     </div>
-    <a href="" class="brand-btn">
-      Lebih Lanjut
-    </a>
+    
+    </details>
   </div>
 </section>
 
@@ -803,12 +818,15 @@
   
 <section class="brand_section">
   <div class="container">
-    <div class="heading_container">
+    <details>
+    <summary>
+    <div class="heading_container" >
       <h2>
         Alat Tulis Kantor
       </h2>
     </div>
-    <div class="brand_container layout_padding2">
+    </summary>
+    <div class="brand_container layout_padding2" >
       <div class="box">
         <div class="box-warna">
         <a href="">
@@ -898,10 +916,12 @@
           </div>
         </a>
       </div>
+      <a href="" class="brand-btn">
+        Lebih Lanjut
+      </a>
     </div>
-    <a href="" class="brand-btn">
-      Lebih Lanjut
-    </a>
+    
+  </details>
   </div>
 </section>
 
@@ -1201,6 +1221,8 @@
 
     });
   </script>
+
+  <!-- navbar -->
   <script>
     var nav = $("#navbarSupportedContent");
     var btn = $(".custom_menu-btn");
@@ -1212,6 +1234,8 @@
       document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
     });
   </script>
+
+  <!-- corousel-->
   <script>
     $('.carousel').on('slid.bs.carousel', function () {
       $(".indicator-2 li").removeClass("active");
@@ -1257,6 +1281,10 @@ function myFunction() {
   }
 }
 </script>
+
+  <!-- mabel kategori-->
+
+  
 
   <!-- back to top js-->
 

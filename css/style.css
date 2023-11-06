@@ -739,6 +739,43 @@ a:focus {
   background-color: #24d278;
 }
 
+/*sale details */
+
+details{
+  background-color: rgb(241, 241, 241);
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+summary {
+  padding: 1rem 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: all 0.3s;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] .brand_container{
+  padding: .5em .4em;
+}
+
 /*
 .brand_section .brand_container .box:hover h6.price {
   color: #252525;
