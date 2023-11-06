@@ -49,16 +49,16 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about"> About</a>
+                <a class="nav-link" href="#about" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()"> About</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="shop.html">Shop </a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#furniture"> Sale </a>
+                <a class="nav-link" href="#furniture" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()"> Sale </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact us</a>
+                <a class="nav-link" href="#contact" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()">Contact us</a>
               </li>
             </ul>
             <!-- <div class="user_option">
@@ -1222,6 +1222,25 @@
     })
   </script>
 
+  <!-- navbar close when click menu-->
+
+  <script>
+    
+    $('a').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top-70
+            }, 900);
+            return false;
+          }
+        }
+      });
+
+  </script>
+
   <!-- sticky navbar -->
 
 <script>
@@ -1232,7 +1251,7 @@ const sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
+    navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }

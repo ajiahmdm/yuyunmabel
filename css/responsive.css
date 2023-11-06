@@ -54,6 +54,12 @@
 }
 
 @media (max-width: 768px) {
+
+  .sticky {
+    background-color: #fefefe;
+    width: 95%;
+  }
+
   .hero_area {
     height: auto;
   }
@@ -178,6 +184,10 @@
 
   .contact_section .map_container {
     padding: 0;
+  }
+
+  #myBtn {
+    padding: 10px;
   }
 }
 
