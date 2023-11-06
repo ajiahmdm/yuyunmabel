@@ -198,6 +198,7 @@ a:focus {
 
 .navbar-brand img {
   width: 150px;
+  z-index: 999;
 }
 
 .custom_nav-container {
