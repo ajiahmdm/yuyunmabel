@@ -1129,7 +1129,7 @@ details[open] .brand_container{
   display: block;
   width: 34px;
   height: 3.5px;
-  background-color: #fff;
+  background-color: #000000;
   margin: 8.5px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
