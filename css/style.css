@@ -547,8 +547,25 @@ a:focus {
   background-color: #f4f5f7;
 }
 
+.trending_section .tab_container2 {
+  display: none;
+}
+
 .trending_section .tab_container .t-link-box {
   margin: 65px 0;
+  color: #24d278;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.trending_section .tab_container .t-link-box2 {
+  margin: 0;
   color: #24d278;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,7 +582,19 @@ a:focus {
   margin: 0;
 }
 
+.trending_section .tab_container .t-link-box2 h5 {
+  margin: 0;
+}
+
 .trending_section .tab_container .t-link-box hr {
+  background-color: #24d278;
+  width: 60px;
+  height: 1.5px;
+  border: none;
+  margin: 0 65px 0 5px;
+}
+
+.trending_section .tab_container .t-link-box2 hr {
   background-color: #24d278;
   width: 60px;
   height: 1.5px;
@@ -582,6 +611,21 @@ a:focus {
 }
 
 .trending_section .tab_container .t-link-box[aria-expanded="true"] .t-name {
+  color: #24d278;
+}
+
+.trending_section .tab_container .t-name .t-link-h6[aria-expanded="true"] h6{
+  color: #24d278;
+}
+
+.trending_section .tab_container .t-name h6{
+  color: #252525;
+  margin-left: 200px;
+  padding: 5px;
+}
+
+.trending_section .tab_container .t-name h6:hover{
+  cursor: pointer;
   color: #24d278;
 }
 
@@ -740,6 +784,80 @@ a:focus {
   background-color: #24d278;
 }
 
+/*sale kategori */
+
+.trending_section .brand_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.trending_section .brand_container .box {
+  position: relative;
+  text-align: left;
+  
+  padding: 0px 0px 10px 0px;
+  margin: 30px 10px 0 10px;
+  min-width: 225px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23.24670%;
+          flex: 0 0 23.24670%;
+}
+
+.trending_section .brand_container .box .box-warna {
+  position: relative;
+  background-color: #e4e5e9;
+  padding: 75px 35px 45px 35px;
+  top: 0;
+}
+
+.trending_section .brand_container .box h6 {
+  color: #707070;
+}
+
+.trending_section .brand_container .box h5.judul {
+  color: #252525;
+}
+
+
+.trending_section .brand_container .box h6.price {
+  color: #24d278;
+}
+
+.trending_section .brand_container .box .new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 35px;
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.trending_section .brand_container .box .new h6 {
+  margin: 0;
+}
+
+.trending_section .brand_container .box .img-box img {
+  width: 100%;
+}
+
+/*
+.trending_section .brand_container .box:hover {
+  background-color: #24d278;
+}
+*/
+
+.trending_section .brand_container .box .box-warna:hover {
+  background-color: #24d278;
+}
+
+
 /*sale details */
 
 details{
@@ -776,6 +894,58 @@ details[open] summary:after{
 details[open] .brand_container{
   padding: .5em .4em;
 }
+details[open] .t-name{
+  padding: 5px;
+}
+
+
+/*dropdown CSS */
+
+    .dropbtn {
+      display: inline-block;
+      background-color: #24d278;
+      width: 100px;
+      padding: 10px;
+      cursor: pointer;
+      color: #ffffff;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      margin-top: 3px;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #082717;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color: #ddd;}
+    
+    .show {display: block;}
+
+
 
 /*
 .brand_section .brand_container .box:hover h6.price {
@@ -1068,6 +1238,11 @@ details[open] .brand_container{
 
 .info_section .info_form .social_box a {
   margin-right: 25px;
+  color: #f3f3f3;
+}
+
+.info_section .info_form .social_box a:hover {
+  color: #24d278;
 }
 
 /* footer section*/
@@ -1178,4 +1353,8 @@ details[open] .brand_container{
 #myBtn:hover {
   background-color: #555;
 }
+
+
+
+
 /*# sourceMappingURL=style.css.map */

@@ -27,6 +27,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- icon boxicon-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
 </head>
 
 <body>
@@ -55,7 +57,7 @@
                 <a class="nav-link" href="shop.html">Shop </a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#sale" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()"> Sale </a>
+                <a class="nav-link" href="sale.html" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()"> Sale </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact" onclick="($('.navbar-toggler').css('display') == 'none') ? '':$('.navbar-toggler').click()">Contact us</a>
@@ -191,10 +193,10 @@
                     </h1>
                     <p>
                       APE dapat
-digunakan dalam materi pembelajaran untuk memudahkan siswa dalam memahami
-pelajaran dengan menggunakan permainan. Permainan ini membuat siswa bermain
-serta belajar dalam kegiatan pembelajaran, siswa akan lebih senang dan giat belajar
-jika suasana pembelajaran bersifat permainan.
+                      digunakan dalam materi pembelajaran untuk memudahkan siswa dalam memahami
+                      pelajaran dengan menggunakan permainan. Permainan ini membuat siswa bermain
+                      serta belajar dalam kegiatan pembelajaran, siswa akan lebih senang dan giat belajar
+                      jika suasana pembelajaran bersifat permainan.
                     </p>
                     <div class="btn-box">
                       <a href="ape.html" class="btn-1">
@@ -697,7 +699,7 @@ jika suasana pembelajaran bersifat permainan.
         </a>
       </div>
       <a href="elektronik.html" class="brand-btn">
-        Lebih Banyak
+        Lihat Lebih
       </a>
     </div>
     
@@ -808,7 +810,7 @@ jika suasana pembelajaran bersifat permainan.
         </a>
       </div>
       <a href="ape.html" class="brand-btn">
-        Lebih Banyak
+        Lihat Lebih
       </a>
     </div>
     
@@ -1160,16 +1162,13 @@ jika suasana pembelajaran bersifat permainan.
             </form>
             <div class="social_box">
               <a href="">
-                <img src="images/fb.png" alt="">
+                <i class='bx bxl-facebook bx-md'></i>
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <i class='bx bxl-instagram bx-md'></i>
               </a>
               <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/youtube.png" alt="">
+                <i class='bx bxl-youtube bx-md'></i>
               </a>
             </div>
           </div>
@@ -1284,7 +1283,25 @@ function myFunction() {
 }
 </script>
 
-  <!-- mabel kategori-->
+  <!-- details close when click-->
+
+<script>
+
+  // Fetch all the details element.
+  const details = document.querySelectorAll("details");
+  
+  // Add the onclick listeners.
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener("click", () => {
+      // Close all the details that are not targetDetail.
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute("open");
+        }
+      });
+    });
+  });
+  </script>
 
   
 
