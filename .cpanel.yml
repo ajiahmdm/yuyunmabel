@@ -5,6 +5,7 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp sale.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp form.php $DEPLOYPATH
     - /bin/cp google86a48dd52ce5f742.html $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH

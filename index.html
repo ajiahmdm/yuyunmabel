@@ -272,7 +272,7 @@
             <p>
               Cv. Putri Pelangi bergerak dibidang pengadaan barang dan jasa bekerja sama dengan Cv.Linggar Jati yang sudah bergerak dibidang pengadaan furniture. Kami berpengalaman lebih dari 10 tahun dalam membuat furniture berkualitas.
             </p>
-            <a href="">
+            <a href="about.html">
               Lebih Lanjut
             </a>
           </div>
@@ -976,21 +976,21 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form action="">
+          <form action="form.php" method="POST" id="contact-form">
             <div>
-              <input type="text" placeholder="Nama" />
+              <input type="text" placeholder="Nama" name="Nama" id="nama"/>
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" name="Email" id="email"/>
             </div>
             <div>
               <input type="text" placeholder="No Telepon" />
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Pesan" />
+              <input type="text" class="message-box" placeholder="Pesan" name="Message" id="message"/>
             </div>
             <div class="d-flex ">
-              <button>
+              <button type="submit">
                 KIRIM
               </button>
             </div>
@@ -1233,6 +1233,11 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
   </script>
+
+  
+
+
+
   <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
       loop: true,
