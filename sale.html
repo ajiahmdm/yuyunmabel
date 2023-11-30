@@ -33,7 +33,13 @@
 
 
 </head>
-
+<style>
+  @media (max-width: 768px){
+  .trending_section .tab_container {
+    display: none;
+  }
+}
+</style>
 <body class="sub_page">
   <div class="hero_area">
     <!-- header section strats -->
@@ -325,66 +331,67 @@
                   </details>
                 </div>
                     <!-- kategori dropdown-->
-                <div class="tab_container2">
-                  <!-- mabel katagori-->
-                  <div class="dropdown">
-                    <button onclick="mabelBtn()" class="dropbtn">Mabel</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                      aria-controls="collapseOne">Meja</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                      aria-controls="collapseTwo">Kursi</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                      aria-controls="collapseThree">Lemari Kayu</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                      aria-controls="collapseFour">Lemari Besi</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                      aria-controls="collapseFive">Set Meja Kursi</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-                      aria-controls="collapseSix">Etalase</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
-                      aria-controls="collapseSeven">Perabot Lain</a>
+                
+                  <div class="tab_container2">
+                    <!-- mabel katagori-->
+                    <div class="dropdown">
+                      <button onclick="mabelBtn()" class="dropbtn">Mabel</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">Meja</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">Kursi</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">Lemari Kayu</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">Lemari Besi</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">Set Meja Kursi</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                        aria-controls="collapseSix">Etalase</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                        aria-controls="collapseSeven">Perabot Lain</a>
+                      </div>
+                    </div>
+                    <!-- Alat Elektronik Kategori-->
+                    <div class="dropdown">
+                      <button onclick="elektronikBtn()" class="dropbtn">Elektronik</button>
+                      <div id="myDropdown2" class="dropdown-content">
+                        <a href="#" data-toggle="collapse" data-target="#collapseAeOne" aria-expanded="false"
+                        aria-controls="collapseAeOne">Laptop</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseAeTwo" aria-expanded="false"
+                        aria-controls="collapseAeTwo">Printer</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseAeThree" aria-expanded="false"
+                        aria-controls="collapseAeThree">Projector</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseAeFour" aria-expanded="false"
+                        aria-controls="collapseAeFour">Screen Projector</a>
+                      </div>
+                    </div>
+                    <!-- Peraga Edukatif Kategori-->
+                    <div class="dropdown">
+                      <button onclick="peragaBtn()" class="dropbtn">APE</button>
+                      <div id="myDropdown3" class="dropdown-content">
+                        <a href="#" data-toggle="collapse" data-target="#collapseApeOne" aria-expanded="false"
+                        aria-controls="collapseApeOne">APE Indoor</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseApeTwo" aria-expanded="false"
+                        aria-controls="collapseApeTwo">APE Outdoor</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseApeThree" aria-expanded="false"
+                        aria-controls="collapseApeThree">Set Alat Drum</a>
+                      </div>
+                    </div>
+                    <!-- ATK Kategori-->
+                    <div class="dropdown">
+                      <button onclick="atkBtn()" class="dropbtn">ATK</button>
+                      <div id="myDropdown4" class="dropdown-content">
+                        <a href="#" data-toggle="collapse" data-target="#collapseAtkOne" aria-expanded="false"
+                        aria-controls="collapseAtkOne">Kertas</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseAtkTwo" aria-expanded="false"
+                        aria-controls="collapseAtkTwo">Tinta Printer</a>
+                        <a href="#" data-toggle="collapse" data-target="#collapseAtkThree" aria-expanded="false"
+                        aria-controls="collapseAtkThree">Alat Tulis</a>
+                      </div>
                     </div>
                   </div>
-                  <!-- Alat Elektronik Kategori-->
-                  <div class="dropdown">
-                    <button onclick="elektronikBtn()" class="dropbtn">Elektronik</button>
-                    <div id="myDropdown2" class="dropdown-content">
-                      <a href="#" data-toggle="collapse" data-target="#collapseAeOne" aria-expanded="false"
-                      aria-controls="collapseAeOne">Laptop</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseAeTwo" aria-expanded="false"
-                      aria-controls="collapseAeTwo">Printer</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseAeThree" aria-expanded="false"
-                      aria-controls="collapseAeThree">Projector</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseAeFour" aria-expanded="false"
-                      aria-controls="collapseAeFour">Screen Projector</a>
-                    </div>
-                  </div>
-                  <!-- Peraga Edukatif Kategori-->
-                  <div class="dropdown">
-                    <button onclick="peragaBtn()" class="dropbtn">APE</button>
-                    <div id="myDropdown3" class="dropdown-content">
-                      <a href="#" data-toggle="collapse" data-target="#collapseApeOne" aria-expanded="false"
-                      aria-controls="collapseApeOne">APE Indoor</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseApeTwo" aria-expanded="false"
-                      aria-controls="collapseApeTwo">APE Outdoor</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseApeThree" aria-expanded="false"
-                      aria-controls="collapseApeThree">Set Alat Drum</a>
-                    </div>
-                  </div>
-                  <!-- ATK Kategori-->
-                  <div class="dropdown">
-                    <button onclick="atkBtn()" class="dropbtn">ATK</button>
-                    <div id="myDropdown4" class="dropdown-content">
-                      <a href="#" data-toggle="collapse" data-target="#collapseAtkOne" aria-expanded="false"
-                      aria-controls="collapseAtkOne">Kertas</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseAtkTwo" aria-expanded="false"
-                      aria-controls="collapseAtkTwo">Tinta Printer</a>
-                      <a href="#" data-toggle="collapse" data-target="#collapseAtkThree" aria-expanded="false"
-                      aria-controls="collapseAtkThree">Alat Tulis</a>
-                    </div>
-                  </div>
-                </div>
             </div>
           </div>
           <div class="col-md-8" style="overflow-y: scroll; height: 500px;">
@@ -5125,7 +5132,7 @@
               <img src="images/telephone-white.png" width="12px" alt="">
             </div>
             <p>
-              +62 858-0022-0010
+              <a href="https://api.whatsapp.com/send?phone=6285800220010&text=Halo%21%20Saya%20ingin%20bertanya%20tentang%20produk%20yang%20ada%20di%20Putri%20Pelangi." target="_blank">+62 858-0022-0010</a>
             </p>
           </div>
           <div>
@@ -5133,7 +5140,7 @@
               <img src="images/envelope-white.png" width="18px" alt="">
             </div>
             <p>
-              cs@linggarjati.co.id
+              <a href="mailto:cs@putripelangi.com">cs@putripelangi.com</a>
             </p>
           </div>
         </div>
